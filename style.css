@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #F2B6C1;
+}
+
+.container {
+  width: 50%;
+  height: 80vh;
+  display: flex;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.212);
+}
+
+.form-image {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+}
+
+.form-image img {
+    width: 25rem;
+}
+
+.form {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  padding: 3rem;
+}
+.form-control {
+  position: relative;
+}
+
+.form-control label {
+  display: inline-block;
+  margin-bottom: 5px;
+}
+
+.form-control input {
+  display: block;
+  border-radius: 6px;
+  font-size: 12px;
+  
+}
+
+.form-control i {
+  position: absolute;
+  top: 45px;
+  right: 10px;
+  visibility: hidden;
+}
+
+.form-control small {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  visibility: hidden;
+}
+
+.form-control.success input {
+  border-color: #F26B76;;
+}
+
+.form-control.error input {
+  border-color: #593C36;;
+}
+
+.form-control.success i.fa-check-circle {
+  color: #F26B76;
+  visibility: visible;
+}
+
+.form-control.error i.fa-exclamation-circle {
+  color: #593C36;;
+  visibility: visible;
+}
+
+.form-control.error small {
+  visibility: visible;
+  color: #593C36;;
+}
+
+.form-header {
+  margin-bottom: 3rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.login-button {
+  display: flex;
+  width: 200px;
+  align-items: center;
+  border: solid 0.5px #ffff;
+  background: #F26B76;
+  padding: 0.4rem 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  text-decoration: none;
+  font-weight: 500;
+  color: #fff;
+  justify-content: center;
+}
+
+
+.login-button:hover {
+  background-color: #F3E7D7;;
+}
+
+
+@media screen and (max-width: 1320px) {
+    .form-image {
+        display: none;
+    }
+    .container {
+        width: 50%;
+    }
+    .form {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 1064px) {
+    .container {
+        width: 90%;
+        height: auto;
+    }
+    .input-group {
+        flex-direction: column;
+        z-index: 5;
+        padding-right: 5rem;
+        max-height: 10rem;
+        overflow-y: scroll;
+        flex-wrap: nowrap;
+    }
+   
